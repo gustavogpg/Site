@@ -812,10 +812,8 @@ banner
 
 .video-background {
   background-color: #3b3e47b0;
-  /* max-width: 100%;
-  max-height: 100%; */
+  max-width: 100%;
   height: auto;
-  width: 100%;
   /* position: fixed !important; */
   top: 0!important;
   left: 0;
@@ -985,7 +983,7 @@ section.services {
   transition: all .5s;
   float: left;
   font-size: 64px;
-  color: #43ba7f;
+  color: #ff970a;
   margin-bottom: 30px;
   margin-right: 30px;
 }
@@ -1289,7 +1287,7 @@ section.testimonials .section-heading {
   display: block;
   font-size: 15px;
   font-weight: 600;
-  color: #dba101;
+  color: hsl(44, 99%, 43%);
 }
 
 .testimonials .item img {
@@ -1327,7 +1325,7 @@ partners
 */
 
 section.partners {
-  background-color: #212741;
+  background-color: #303030;
   padding: 80px 0px;
 }
 
