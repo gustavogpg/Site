@@ -892,6 +892,8 @@ banner
   transform: translateY(-50%);
 }
 
+/* Texto branco do titulo do banner */
+
 .slide-inner .header-text h2 {
   position: relative;
   z-index: 2;
@@ -903,6 +905,8 @@ banner
   line-height: 70px;
   margin-bottom: 40px;
 }
+
+/* Cor da pequena barrinha de divisão */
 
 .slide-inner .header-text .div-dec {
   width: 80px;
@@ -1694,7 +1698,7 @@ section.map .info-item:hover {
 
 section.map .info-item i {
   font-size: 36px;
-  color: #43ba7f;
+  color: #ff9600;
   margin-bottom: 25px;
 }
 
@@ -1708,7 +1712,7 @@ section.map .info-item h4 {
 section.map .info-item a {
   font-size: 15px;
   font-weight: 600;
-  color: #43ba7f;
+  color: #ff9600;
   transition: all 0.3s;
 }
 
