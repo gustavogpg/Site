@@ -507,11 +507,13 @@ header
   padding-right: 0px;
 }
 
+
+/* Cor do menu do header interativo (dentro do botão "+") */
 .header-area .main-nav .nav li.has-sub ul.sub-menu li a {
   opacity: 1;
   display: block;
   background: #ffffff;
-  color: #ffffff!important;
+  color: rgb(0, 0, 0)!important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
