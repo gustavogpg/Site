@@ -869,6 +869,9 @@ banner
 
 .slide-inner {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   height: 100%;
   left: 0;
@@ -917,6 +920,9 @@ banner
 
 .slide-inner .header-text h2 {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
   z-index: 2;
   font-size: 50px;
   color: #fff;
@@ -926,6 +932,25 @@ banner
   line-height: 70px;
   margin-bottom: 40px;
 }
+
+/* Responsividade para celulares pequenos */
+@media (min-width: 300px) and (max-width: 374px) {
+  .slide-inner .header-text h2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    z-index: 2;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    opacity: 1;
+    visibility: visible;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
+}
+
 
 /* Cor da pequena barrinha de divisão */
 
