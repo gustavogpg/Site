@@ -920,9 +920,9 @@ banner
 
 .slide-inner .header-text h2 {
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;  */
   z-index: 2;
   font-size: 50px;
   color: #fff;
@@ -934,14 +934,14 @@ banner
 }
 
 /* Responsividade para celulares pequenos */
-@media (min-width: 300px) and (max-width: 374px) {
+@media (min-width: 300px) and (max-width: 424px) {
   .slide-inner .header-text h2 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     z-index: 2;
-    font-size: 40px;
+    font-size: 42px;
     color: #fff;
     font-weight: 700;
     opacity: 1;
