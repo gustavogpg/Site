@@ -1096,16 +1096,17 @@ about us
 */
 
 .container-usp {
-  /* margin: 0; */
-  padding: 5%;
-
+  padding: 2%;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(152, 15, 15, 0.421); */
   background-image: url(../fotos/foto-usp-overlay_20.png);
-
-
+  background-attachment: fixed;
+  background-position-y: center;
+  background-position-x: 30%;
 }
+
+
+
 
 .row-usp2 {
   /* max-width: 100vw;
@@ -1119,9 +1120,9 @@ about us
   align-content: center;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
 }
-
 
 
 .row-usp {
@@ -1137,17 +1138,83 @@ about us
   align-items: center;
 
   /* background-image: url(../fotos/foto-usp-overlay_20.png); */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .estatistica-usp {
-  color: white;
   font-size: 1.5rem;
+  color: white;
 }
 
-/* .fundo-preto {
-  background-color: black;
-} */
+.estatistica-usp-titulo {
+  font-size: 3rem;
+  color: white;
+}
+
+img#logo-usp {
+  width: 40%; 
+  padding: 1%;
+}
+
+
+h4#campus_sao_carlos {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Monitores grandes */
+@media (min-width: 1440px) and (max-width: 3000px) {
+  .estatistica-usp-titulo {
+    font-size: 4rem;
+    color: white;
+  }
+
+  img#logo-usp {
+    width: 30%; 
+    padding: 1%;
+  }
+
+
+  h4#campus_sao_carlos {
+    font-size: 3.5rem;
+    color: white;
+  }
+}
+
+/* Celulares médios até tablet */
+@media (min-width: 375px) and (max-width: 767px) {
+  .estatistica-usp-titulo {
+    font-size: 2rem;
+    color: white;
+  }
+
+  img#logo-usp {
+    width: 80%;
+  }
+
+  h4#campus_sao_carlos {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+/* Celulares pequenos */
+@media (min-width: 300px) and (max-width: 374px) {
+  .estatistica-usp-titulo {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  img#logo-usp {
+    width: 80%;
+  }
+
+  h4#campus_sao_carlos {
+    font-size: 1rem;
+    color: white;
+  }
+}
+
 
 
 
