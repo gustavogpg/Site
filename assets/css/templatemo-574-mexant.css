@@ -282,8 +282,8 @@ body {
   transition: all .3s;
 }
 
-.green-button a:hover {
-}
+/* .green-button a:hover {
+} */
 
 .orange-button a {
   font-size: 14px;
