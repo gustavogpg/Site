@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>Guepardo - Motoracing</title>
+  <title>EESC-USP Guepardo</title>
+  <link rel="icon" href="assets/images/logo-icon.ico" type="image/ico-icon">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -103,7 +104,7 @@ https://templatemo.com/tm-574-mexant
 
 
           <!-- Vídeo da abertura do site -->
-          <video id="video_home" autoplay muted loop name="media" class="video-background">
+          <video id="video_home" autoplay muted loop name="media" class="video-background" poster="assets/images/video site fundo 1 - frame at 0m0s.jpg">
 
             <!-- Video exemplo -->
             <!-- Mantega: Esse modelo funciona, mas com video em um lik externo -->
@@ -224,13 +225,13 @@ https://templatemo.com/tm-574-mexant
   <!-- ######## Nossa Universidade ######## -->
 
   <div class="services" id="about">
-    <div class="container-usp">
-
+    <div class="container-usp" data-bg="assets/fotos/foto-usp-overlay_20-comprimida.png">
       <div class="row-usp2">
 
         <div class="row-usp2">
           <h4 class="estatistica-usp-titulo">Nossa Universidade</h4>
-          <img id="logo-usp" src="assets/fotos/logo_usp_branco_sem_fundo.png" alt="logo usp">
+          <!-- Logo da USP -->
+          <img id="logo-usp" src="assets/fotos/logo_usp_branco_sem_fundo-comprimida.png" alt="logo usp" loading="lazy">
           <h4 id="campus_sao_carlos" class="estatistica-usp-titulo">Campus São Carlos</h4>
         </div>
 
@@ -274,9 +275,32 @@ https://templatemo.com/tm-574-mexant
     </div>
   </div>
 
-
-
-  <!-- ######## [FIM] Sobre nós ######## -->
+<!-- Script para as imagens do "Nossa Universidade" carregarem com melhor desempenho -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyBackgrounds = document.querySelectorAll('.container-usp');
+  
+      function loadLazyBackground(element) {
+        var imageUrl = element.getAttribute('data-bg');
+        element.style.backgroundImage = 'url(' + imageUrl + ')';
+      }
+  
+      lazyBackgrounds.forEach(function(background) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              loadLazyBackground(background);
+              observer.unobserve(background);
+            }
+          });
+        });
+  
+        observer.observe(background);
+      });
+    });
+  </script>
+  
+  <!-- ######## [FIM] Nossa Universidade ######## -->
 
 
 
